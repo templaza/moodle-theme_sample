@@ -25,8 +25,8 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-// Redirect to the Moon theme settings page if the 'section' parameter is set to 'themesettingmoon'.
+// Redirect to the Sample theme settings page if the 'section' parameter is set to 'themesettingsample'.
 $section = optional_param('section', '', PARAM_ALPHANUMEXT);
-if ($section === 'themesettingmoon') {
-    redirect(new moodle_url('/local/moon/index.php?theme=moon'));
+if ($section === 'themesettingsample') {
+    redirect(new moodle_url('/local/moon/index.php?theme=sample'));
 }
